@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Category｜CHENMKO</title>
+    <!--import basic css file-->
+    <link rel="stylesheet" href="../assets/css/basic.css">
     <!--Bootstrap Import-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
@@ -12,12 +14,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&display=swap" rel="stylesheet">
-    <style>
-        body{
-            font-family: 'Noto Sans TC', sans-serif;
-        }
-    </style>
-
 </head>
 <body>
     <nav class="d-flex flex-column p-0 sticky-top bg-white">
@@ -28,12 +24,14 @@
                     <div class="w-100 d-flex justify-content-end align-items-center">
                         <p class="d-inline-block my-0 me-2 text-white" >
                             <span>Language｜</span>
-                            <a class="pe-2 text-reset hoverOpacityToLighter" 
-                                href="">English</a>
-                            <a class="pe-2 text-reset hoverOpacityToLighter" 
+                            <a class="pe-1 text-reset hoverLink" 
+                                href="">En</a>
+                            <span>/</span>
+                            <a class="pe-1 text-reset hoverLink" 
                                 href="">JP</a>
-                            <a class="pe-2 text-reset hoverOpacityToLighter" 
-                                href="">繁體中文</a>
+                            <span>/</span>
+                            <a class="pe-2 text-reset hoverLink" 
+                                href="">繁中</a>
                         </p>
                         <form class="d-inline-block" name="search-product">
                             <div class="bg-white p-1 rounded-pill overflow-hidden">
@@ -107,7 +105,7 @@
                             <a class="nav-link px-lg-3 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                               產品類別
                             </a>
-                            <ul class="dropdown-menu border-0" id="category-list" style="border-radius: 0px;">
+                            <ul class="dropdown-menu border-0 text-center" id="category-list" style="border-radius: 0px;">
                                 <li><a class="dropdown-item" href="#">二極體 Diodes</a></li>
                                 <li><a class="dropdown-item" href="#">TVS</a></li>
                                 <li><a class="dropdown-item" href="#">電晶管 TR</a></li>
@@ -122,7 +120,6 @@
                     </ul>
                 </div>
             </div>
-            
         </div>
     </nav>
     <section>
@@ -130,7 +127,8 @@
             <div class="row">
                 <div class="col-12 col-lg-2">
                     <div class="d-grid pb-2">
-                        <button class="btn btn-primary d-block d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCateList" aria-expanded="false" aria-controls="collapseCateList">
+                        <button class="btn btn-primary d-block d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCateList" aria-expanded="false" aria-controls="collapseCateList"
+                                style="background-color: hsla(206, 86%, 39%, 1);">
                             折疊 / 開啟清單
                         </button>
                     </div>
@@ -317,7 +315,7 @@
                                         </tr>
                                         <tr>
                                             <td class="text-center">TVSF5.0AGP-A</td>
-                                            <td class="text-center"><a href="" class="fs-5 link-danger"><i class="bi bi-file-pdf-fill d-block" style="margin-top: -3px;"></i></a></td>
+                                            <td class="text-center"><a href="" class="fs-5 link-danger"><i class="bi bi-file-pdf-fill d-none d-lg-block" style="margin-top: -3px;"></i><i class="bi bi-cloud-arrow-down-fill d-block d-lg-none" style="margin-top: -3px;"></i></a></td>
                                             <td class="text-center">200</td>
                                             <td class="text-center">6.4(min)</td>
                                             <td class="text-center">5</td>
@@ -329,7 +327,7 @@
                                         </tr>
                                         <tr>
                                             <td class="text-center">TVSF5.0AGP-B</td>
-                                            <td class="text-center"><a href="" class="fs-5 link-danger"><i class="bi bi-file-pdf-fill d-block" style="margin-top: -3px;"></i></a></td>
+                                            <td class="text-center"><a href="" class="fs-5 link-danger"><i class="bi bi-file-pdf-fill d-none d-lg-block" style="margin-top: -3px;"></i><i class="bi bi-cloud-arrow-down-fill d-block d-lg-none" style="margin-top: -3px;"></i></a></td>
                                             <td class="text-center">200</td>
                                             <td class="text-center">6.4(min)</td>
                                             <td class="text-center">5</td>
@@ -341,7 +339,7 @@
                                         </tr>
                                         <tr>
                                             <td class="text-center">TVSF5.0AGP-A</td>
-                                            <td class="text-center"><a href="" class="fs-5 link-danger"><i class="bi bi-file-pdf-fill d-block" style="margin-top: -3px;"></i></a></td>
+                                            <td class="text-center"><a href="" class="fs-5 link-danger"><i class="bi bi-file-pdf-fill d-none d-lg-block" style="margin-top: -3px;"></i><i class="bi bi-cloud-arrow-down-fill d-block d-lg-none" style="margin-top: -3px;"></i></a></td>
                                             <td class="text-center">200</td>
                                             <td class="text-center">6.4(min)</td>
                                             <td class="text-center">5</td>
@@ -353,7 +351,7 @@
                                         </tr>
                                         <tr>
                                             <td class="text-center">TVSF5.0AGP-A</td>
-                                            <td class="text-center"><a href="" class="fs-5 link-danger"><i class="bi bi-file-pdf-fill d-block" style="margin-top: -3px;"></i></a></td>
+                                            <td class="text-center"><a href="" class="fs-5 link-danger"><i class="bi bi-file-pdf-fill d-none d-lg-block" style="margin-top: -3px;"></i><i class="bi bi-cloud-arrow-down-fill d-block d-lg-none" style="margin-top: -3px;"></i></a></td>
                                             <td class="text-center">200</td>
                                             <td class="text-center">6.4(min)</td>
                                             <td class="text-center">5</td>
@@ -365,7 +363,7 @@
                                         </tr>
                                         <tr>
                                             <td class="text-center">TVSF5.0AGP-A</td>
-                                            <td class="text-center"><a href="" class="fs-5 link-danger"><i class="bi bi-file-pdf-fill d-block" style="margin-top: -3px;"></i></a></td>
+                                            <td class="text-center"><a href="" class="fs-5 link-danger"><i class="bi bi-file-pdf-fill d-none d-lg-block" style="margin-top: -3px;"></i><i class="bi bi-cloud-arrow-down-fill d-block d-lg-none" style="margin-top: -3px;"></i></a></td>
                                             <td class="text-center">200</td>
                                             <td class="text-center">6.4(min)</td>
                                             <td class="text-center">5</td>
@@ -377,7 +375,7 @@
                                         </tr>
                                         <tr>
                                             <td class="text-center">TVSF5.0AGP-A</td>
-                                            <td class="text-center"><a href="" class="fs-5 link-danger"><i class="bi bi-file-pdf-fill d-block" style="margin-top: -3px;"></i></a></td>
+                                            <td class="text-center"><a href="" class="fs-5 link-danger"><i class="bi bi-file-pdf-fill d-none d-lg-block" style="margin-top: -3px;"></i><i class="bi bi-cloud-arrow-down-fill d-block d-lg-none" style="margin-top: -3px;"></i></a></td>
                                             <td class="text-center">200</td>
                                             <td class="text-center">6.4(min)</td>
                                             <td class="text-center">5</td>
@@ -389,7 +387,7 @@
                                         </tr>
                                         <tr>
                                             <td class="text-center">TVSF5.0AGP-A</td>
-                                            <td class="text-center"><a href="" class="fs-5 link-danger"><i class="bi bi-file-pdf-fill d-block" style="margin-top: -3px;"></i></a></td>
+                                            <td class="text-center"><a href="" class="fs-5 link-danger"><i class="bi bi-file-pdf-fill d-none d-lg-block" style="margin-top: -3px;"></i><i class="bi bi-cloud-arrow-down-fill d-block d-lg-none" style="margin-top: -3px;"></i></a></td>
                                             <td class="text-center">200</td>
                                             <td class="text-center">6.4(min)</td>
                                             <td class="text-center">5</td>
@@ -401,7 +399,7 @@
                                         </tr>
                                         <tr>
                                             <td class="text-center">TVSF5.0AGP-A</td>
-                                            <td class="text-center"><a href="" class="fs-5 link-danger"><i class="bi bi-file-pdf-fill d-block" style="margin-top: -3px;"></i></a></td>
+                                            <td class="text-center"><a href="" class="fs-5 link-danger"><i class="bi bi-file-pdf-fill d-none d-lg-block" style="margin-top: -3px;"></i><i class="bi bi-cloud-arrow-down-fill d-block d-lg-none" style="margin-top: -3px;"></i></a></td>
                                             <td class="text-center">200</td>
                                             <td class="text-center">6.4(min)</td>
                                             <td class="text-center">5</td>
@@ -486,21 +484,21 @@
             }
         </style>
         <div style="background: #565656; color: #ffffff;">
-            <div class="container py-5">
-                <div class="row">
+            <div class="container py-5 d-flex d-lg-block justify-content-center">
+                <div class="row d-inline-block d-lg-flex">
                     <div class="col-12 col-lg-4 pb-5">
                         <p class="footer-title">台灣 業務部門</p>
                         <!--信箱格式-->
                         <p class="footer-item"> 
                             <i class="bi bi-envelope-fill me-1"></i>
                             <a class="text-reset"
-                               href="mailto://elaine@chenmko.com.tw">elaine@chenmko.com.tw</a>
+                            href="mailto://elaine@chenmko.com.tw">elaine@chenmko.com.tw</a>
                         </p>
                         <!--電話格式-->
                         <p class="footer-item">
                             <img src="../assets/basic_imgs/icon_phone_white.svg" class="me-1" width="16px">
                             <a class="text-reset"
-                               href="tel:02-2913-5566 #107">02-2913-5566 #107</a>
+                            href="tel:02-2913-5566 #107">02-2913-5566 #107</a>
                         </p>
                     </div>
                     <div class="col-12 col-lg-4 pb-5">
@@ -531,7 +529,11 @@
                             新店區中興路二段190號5樓之2
                         </p>
                     </div>
-                    <div class="col-12 pb-5">
+                </div>
+            </div>
+            <div class="container pb-5">
+                <div class="row">
+                    <div class="col-12">
                         <p class="text-center">COPYRIGHT © 2023 CHENMKO CO., LTD. All Rights Reserved.</p>
                     </div>
                 </div>

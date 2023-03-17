@@ -1,0 +1,13 @@
+body{
+    font-family: 'Noto Sans TC', sans-serif;
+}
+.hoverLink{
+    text-decoration: underline;
+}
+.hoverLink:hover{
+    text-decoration: none;
+}
+.border-round-20{
+    border-radius: 20px;
+    overflow: hidden;
+}

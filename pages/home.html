@@ -2,9 +2,13 @@
 <html lang="zh_tw">
 <head>
     <meta charset="UTF-8">
+    <link rel=”alternate”  hreflang=”zh-TW”>
+    <title>CHENMKO</title>
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CHENMKO</title>
+    <!--import basic css file-->
+    <link rel="stylesheet" href="../assets/css/basic.css">
     <!--Bootstrap Import-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
@@ -12,12 +16,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&display=swap" rel="stylesheet">
-    <style>
-        body{
-            font-family: 'Noto Sans TC', sans-serif;
-        }
-    </style>
-
 </head>
 <body>
     <nav class="d-flex flex-column p-0 sticky-top bg-white">
@@ -28,12 +26,14 @@
                     <div class="w-100 d-flex justify-content-end align-items-center">
                         <p class="d-inline-block my-0 me-2 text-white" >
                             <span>Language｜</span>
-                            <a class="pe-2 text-reset hoverOpacityToLighter" 
-                                href="">English</a>
-                            <a class="pe-2 text-reset hoverOpacityToLighter" 
+                            <a class="pe-1 text-reset hoverLink" 
+                                href="">En</a>
+                            <span>/</span>
+                            <a class="pe-1 text-reset hoverLink" 
                                 href="">JP</a>
-                            <a class="pe-2 text-reset hoverOpacityToLighter" 
-                                href="">繁體中文</a>
+                            <span>/</span>
+                            <a class="pe-2 text-reset hoverLink" 
+                                href="">繁中</a>
                         </p>
                         <form class="d-inline-block" name="search-product">
                             <div class="bg-white p-1 rounded-pill overflow-hidden">
@@ -107,7 +107,7 @@
                             <a class="nav-link px-lg-3 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                               產品類別
                             </a>
-                            <ul class="dropdown-menu border-0" id="category-list" style="border-radius: 0px;">
+                            <ul class="dropdown-menu border-0 text-center" id="category-list" style="border-radius: 0px;">
                                 <li><a class="dropdown-item" href="#">二極體 Diodes</a></li>
                                 <li><a class="dropdown-item" href="#">TVS</a></li>
                                 <li><a class="dropdown-item" href="#">電晶管 TR</a></li>
@@ -122,7 +122,6 @@
                     </ul>
                 </div>
             </div>
-            
         </div>
     </nav>
     <section>
@@ -199,7 +198,7 @@
                 <div class="container">
                     <div class="row d-flex align-items-center">
                         <div class="col-12 col-lg-6 py-3">
-                            <p class="m-0 fs-4" style="letter-spacing: 0.07em;">
+                            <p class="m-0 fs-4 text-lg-start text-center" style="letter-spacing: 0.07em;">
                                 總公司位於台灣新北市的力勤股份有限公司<br>
                                 成立於1992年7月 是一個擁有員工超過2500人<br>
                                 分佈於4個國家的中小企業<br>
@@ -209,7 +208,7 @@
                             </p>
                         </div>
                         <div class="col-12 col-lg-6">
-                            <p class="m-0 fs-4" style="letter-spacing: 0.21em; line-height: 3.5rem;">
+                            <p class="m-0 fs-4 text-lg-start text-center" style="letter-spacing: 0.21em; line-height: 3.5rem;">
                                 <i class="bi bi-check-circle-fill me-2" style="color: #6999c9;"></i><span class="fw-bold">穩定的品質 </span><br>
                                 <i class="bi bi-check-circle-fill me-2" style="color: #6999c9;"></i><span class="fw-bold">穩定的供貨 </span><br>
                                 <i class="bi bi-check-circle-fill me-2" style="color: #6999c9;"></i><span class="fw-bold">持續開發世界級的功率元件</span>
@@ -292,19 +291,18 @@
                         @media (max-width: 992px) {
                             .effvevrwvvvvvb43t34tf{
                                 background-color: #ffffffad; 
-                                border-radius: 20px;
                             }
                         }
                     </style>
-                    <div class="col-12 d-flex justify-content-center pb-5 effvevrwvvvvvb43t34tf">
-                        <p class="text-center text-break" style="max-width: 576px; color: #737373; font-size: 1.5rem;">
-                            <span style="color: #0E6EB8; font-size: 1.75rem;">無衝突礦產政策</span><br>
+                    <div class="col-12 d-flex justify-content-center border-round-20 effvevrwvvvvvb43t34tf">
+                        <p class="text-center text-break" style="max-width: 576px; color: #565656; font-size: 1.5rem;">
+                            <span class="fw-bold" style="color: #0E6EB8; font-size: 1.75rem;">無衝突礦產政策</span><br>
                             <br>
                             對於來自衝突或高風險地區的3TG(鉭Ta，錫Sn，鎢W，金Au的縮寫)、鈷Co等礦物、通過走私貿易途徑、被非政府武裝控制或非法的軍事派別控制的金屬礦產均屬於衝突礦產。<br>
                             <br>
                             力勤要求供應商遵守責任商業聯盟行為準則(RBA)，只從對環境和社會負責的供應商採購材料，全體供應商不能採購和使用衝突礦產，符合無衝突礦產要求，並從責任礦產倡議(RMI)確認的責任礦產保證流程(RMAP)認證冶煉廠和精煉廠清單中採購（<a href="http://www.responsiblemineralsinitiative.org/" class="text-reset" target="_blank" rel="noopener noreferrer">http://www.responsiblemineralsinitiative.org/</a>）。所有供應商應採購通過RMAP認證符合無衝突金屬要求的冶煉廠和精煉廠的金屬。沒有通過RMAP認證的冶煉廠和精煉廠必須從供應鏈中移除。<br>
                             <br><br>
-                            <span style="color: #0E6EB8; font-size: 1.75rem;">供應商要求</span><br>
+                            <span class="fw-bold" style="color: #0E6EB8; font-size: 1.75rem;">供應商要求</span><br>
                             <br>
                             要求供應商，如果有衝突礦產用於提供力勤的產品時，請立即告知並採取替代方案，並按照我司要求實施相關整改措施，經確認整改完成後才能繼續供貨，以確保完全符合無衝突要求，涉及衝突礦產的相關產品材料按照不合格品進行處理。要求供應商與供應鏈每年進行商業上合理的盡責調查，以保證提供給力勤的產品中使用的金屬並不來源於衝突礦產。<br>
                             <br>
@@ -326,21 +324,21 @@
             }
         </style>
         <div style="background: #565656; color: #ffffff;">
-            <div class="container py-5">
-                <div class="row">
+            <div class="container py-5 d-flex d-lg-block justify-content-center">
+                <div class="row d-inline-block d-lg-flex">
                     <div class="col-12 col-lg-4 pb-5">
                         <p class="footer-title">台灣 業務部門</p>
                         <!--信箱格式-->
                         <p class="footer-item"> 
                             <i class="bi bi-envelope-fill me-1"></i>
                             <a class="text-reset"
-                               href="mailto://elaine@chenmko.com.tw">elaine@chenmko.com.tw</a>
+                            href="mailto://elaine@chenmko.com.tw">elaine@chenmko.com.tw</a>
                         </p>
                         <!--電話格式-->
                         <p class="footer-item">
                             <img src="../assets/basic_imgs/icon_phone_white.svg" class="me-1" width="16px">
                             <a class="text-reset"
-                               href="tel:02-2913-5566 #107">02-2913-5566 #107</a>
+                            href="tel:02-2913-5566 #107">02-2913-5566 #107</a>
                         </p>
                     </div>
                     <div class="col-12 col-lg-4 pb-5">
@@ -371,7 +369,11 @@
                             新店區中興路二段190號5樓之2
                         </p>
                     </div>
-                    <div class="col-12 pb-5">
+                </div>
+            </div>
+            <div class="container pb-5">
+                <div class="row">
+                    <div class="col-12">
                         <p class="text-center">COPYRIGHT © 2023 CHENMKO CO., LTD. All Rights Reserved.</p>
                     </div>
                 </div>
