@@ -1,0 +1,1164 @@
+<!DOCTYPE html>
+<html lang="zh_tw">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT US｜CHENMKO</title>
+    <!--import basic css file-->
+    <link rel="stylesheet" href="../assets/css/basic.css">
+    <!--Bootstrap Import-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!--Noto Sans Import-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="d-flex flex-column p-0 sticky-top bg-white">
+        <!-- Language Change and Search Products -->
+        <div class="w-100" style="background-color: #2b663a;">
+            <div class="container">
+                <div class="col-12 py-2">
+                    <div class="w-100 d-flex justify-content-end align-items-center">
+                        <p class="d-inline-block my-0 me-2 text-white" >
+                            <span>Language｜</span>
+                            <a class="pe-1 text-reset hoverLink" 
+                                href="">En</a>
+                            <span>/</span>
+                            <a class="pe-1 text-reset hoverLink" 
+                                href="">JP</a>
+                            <span>/</span>
+                            <a class="pe-2 text-reset hoverLink" 
+                                href="">繁中</a>
+                        </p>
+                        <form class="d-inline-block" name="search-product">
+                            <div class="bg-white p-1 rounded-pill overflow-hidden">
+                                <style>
+                                    #search-product .btn{
+                                        background-color: #2b663a;
+                                        color: white;
+                                    }
+                                    #search-product .btn:hover{
+                                        background-color: #245631;
+                                        color: white;
+                                    }
+                                </style>
+                                <div class="btn-group btn-group-sm" id="search-product">
+                                    <input type="text" name="searchWord" class="form-control border-0 rounded-pill" 
+                                            placeholder="Search" aria-label="Search Input" aria-describedby="btnGroupAddon2">
+                                    <button type="submit" class="btn theme-bg-green text-white rounded-circle" style="padding: 4px 9px 8px 9px;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Page Link List -->
+        <style>
+            #navbarNav ul li .nav-link{
+                color: #3c85df;
+            }
+            #navbarNav ul li .nav-link:hover{
+                color: #316cb3;
+            }
+            #category-list{
+                background-color: #316cb3;
+                color: white;
+            }
+            #category-list li a{
+                color: white;
+            }
+            #category-list li a:hover{
+                background-color: #3c85df;
+                color: white;
+            }
+        </style>
+        <div class="navbar navbar-expand-lg ">
+            <div class="container d-flex flex-wrap py-2">
+                <a class="navbar-brand" href="#">
+                    <img src="../assets/basic_imgs/icon_company_logo.svg" alt="company logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav fs-4">
+                        <li class="nav-item">
+                            <a class="nav-link px-lg-3" 
+                               aria-current="page" href="#">
+                                <img src="../assets/basic_imgs/icon_homepage.svg" alt="homepage icon" style="margin-top: -2px;">
+                            </a>
+                        </li>
+                        <span class="d-none d-lg-inline-block py-2" style="opacity: 0.6; color: #316cb3;">｜</span>
+                        <li class="nav-item">
+                            <a class="nav-link px-lg-3" href="#">關於我們</a>
+                        </li>
+                        <span class="d-none d-lg-inline-block py-2" style="opacity: 0.6; color: #316cb3;">｜</span>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link px-lg-3 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              產品類別
+                            </a>
+                            <ul class="dropdown-menu border-0 text-center" id="category-list" style="border-radius: 0px;">
+                                <li><a class="dropdown-item" href="#">二極體 Diodes</a></li>
+                                <li><a class="dropdown-item" href="#">TVS</a></li>
+                                <li><a class="dropdown-item" href="#">電晶管 TR</a></li>
+                                <li><a class="dropdown-item" href="#">場效電晶體 MOS</a></li>
+                                <li><a class="dropdown-item" href="#">LDO</a></li>
+                            </ul>
+                        </li>
+                        <span class="d-none d-lg-inline-block py-2" style="opacity: 0.6; color: #316cb3;">｜</span>
+                        <li class="nav-item">
+                            <a class="nav-link px-lg-3" href="#">聯絡我們</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <!--Page Title-->
+        <div style="background: linear-gradient(to right,rgba(0, 55, 162, 0.45),rgba(0, 55, 162, 0.45)),url(../assets/basic_imgs/bgImage_pageTitle.jpg);
+                    background-repeat: no-repeat; background-size: cover;">
+            <style>
+                .pageTitle h1{
+                    color: rgba(255, 255, 255, 0.5);
+                    font-weight: 700;
+                    font-size: 6rem;
+                }
+            </style>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 pageTitle" style="padding: 6rem 0rem;">
+                        <h1 class="text-center text-uppercase">
+                            ABOUT US
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-center py-5" style="color: #737373;">
+                        公司創立於1992 年 至今30餘年<br>
+                        <br>
+                        總公司｜新店區中興路二段190號<br>
+                        <br>
+                        工廠｜中國 江蘇<br>
+                        <span class="text-hlcolor-blue">通過IATF16949 /ISO9001/QC080000/ISO14001 認證</span><br>
+                        <br>
+                        力勤產品<br>
+                        <span class="text-hlcolor-blue">Diode 二極體 ｜ TR 電晶體 ｜ MOS 場效電晶體</span><br>
+                        <br>
+                        企業文化<br>
+                        <span class="text-hlcolor-blue">共盛共榮 尊重感恩</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="pb-4">
+            <div class="separator fs-4 fw-bold" style="color: #2C80C1;">歷史沿革</div>
+        </div>
+        <style>
+            .history-item div p{
+                margin: 0px;
+            }
+        </style>
+        <div class="container d-block d-lg-none">
+            <div class="row">
+                <div class="col-6 p-2 py-5">
+                    <div class="d-flex justify-content-center">
+                        <div class="d-block" style="width: 128px; min-height: 128px;">
+                            <img src="../assets/uploaded_imgs/history/2023.png" class="img-fluid" alt="...">
+                        </div>
+                    </div>
+                    <div class="text-center pt-2 history-item">
+                        <div class="fw-bold" style="font-size: 36px;">
+                            <p style="color: #0E6EB8;">2023</p>
+                        </div>
+                        <div style="color: #737373;">
+                            <p>研發CSP產品 體積更小 效率更高</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 p-2 py-5">
+                    <div class="d-flex justify-content-center">
+                        <div class="d-block" style="width: 128px; min-height: 128px;">
+                            <img src="../assets/uploaded_imgs/history/2020.png" class="img-fluid" alt="...">
+                        </div>
+                    </div>
+                    <div class="text-center pt-2 history-item">
+                        <div class="fw-bold" style="font-size: 36px;">
+                            <p style="color: #0E6EB8;">2020</p>
+                        </div>
+                        <div style="color: #737373;">
+                            <p>三極管最小包裝 DFN3X3/ DFNT1006A</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 p-2 py-5">
+                    <div class="d-flex justify-content-center">
+                        <div class="d-block" style="width: 128px; min-height: 128px;">
+                            <img src="../assets/uploaded_imgs/history/2018.png" class="img-fluid" alt="...">
+                        </div>
+                    </div>
+                    <div class="text-center pt-2 history-item">
+                        <div class="fw-bold" style="font-size: 36px;">
+                            <p style="color: #006835;">2018</p>
+                        </div>
+                        <div style="color: #737373;">
+                            <p>DFN523/DFN923 量產應用在穿戴式裝置小型產品</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 p-2 py-5">
+                    <div class="d-flex justify-content-center">
+                        <div class="d-block" style="width: 128px; min-height: 128px;">
+                            <img src="../assets/uploaded_imgs/history/2017.png" class="img-fluid" alt="...">
+                        </div>
+                    </div>
+                    <div class="text-center pt-2 history-item">
+                        <div class="fw-bold" style="font-size: 36px;">
+                            <p style="color: #006835;">2017</p>
+                        </div>
+                        <div style="color: #737373;">
+                            <p>車用規格產品通過AECQ-100認證</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 p-2 py-5">
+                    <div class="d-flex justify-content-center">
+                        <div class="d-block" style="width: 128px; min-height: 128px;">
+                            <img src="../assets/uploaded_imgs/history/2016.png" class="img-fluid" alt="...">
+                        </div>
+                    </div>
+                    <div class="text-center pt-2 history-item">
+                        <div class="fw-bold" style="font-size: 36px;">
+                            <p style="color: #006835;">2016</p>
+                        </div>
+                        <div style="color: #737373;">
+                            <p>3A-5A產品已經能封裝在SOD-123大小產品應用在筆電相關及薄型產品</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 p-2 py-5">
+                    <div class="d-flex justify-content-center">
+                        <div class="d-block" style="width: 128px; min-height: 128px;">
+                            <img src="../assets/uploaded_imgs/history/2015.png" class="img-fluid" alt="...">
+                        </div>
+                    </div>
+                    <div class="text-center pt-2 history-item">
+                        <div class="fw-bold" style="font-size: 36px;">
+                            <p style="color: #0E6EB8;">2015</p>
+                        </div>
+                        <div style="color: #737373;">
+                            <p>開發SMB-A & SOD-323J & DFN3X2-8L 包裝產品</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 p-2 py-5">
+                    <div class="d-flex justify-content-center">
+                        <div class="d-block" style="width: 128px; min-height: 128px;">
+                            <img src="../assets/uploaded_imgs/history/2014.png" class="img-fluid" alt="...">
+                        </div>
+                    </div>
+                    <div class="text-center pt-2 history-item">
+                        <div class="fw-bold" style="font-size: 36px;">
+                            <p style="color: #0E6EB8;">2014</p>
+                        </div>
+                        <div style="color: #737373;">
+                            <p>開發DFN0603包裝產品</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 p-2 py-5">
+                    <div class="d-flex justify-content-center">
+                        <div class="d-block" style="width: 128px; min-height: 128px;">
+                            <img src="../assets/uploaded_imgs/history/2009.png" class="img-fluid" alt="...">
+                        </div>
+                    </div>
+                    <div class="text-center pt-2 history-item">
+                        <div class="fw-bold" style="font-size: 36px;">
+                            <p style="color: #0E6EB8;">2009</p>
+                        </div>
+                        <div style="color: #737373;">
+                            <p>開發低電容TVS diodes</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 p-2 py-5">
+                    <div class="d-flex justify-content-center">
+                        <div class="d-block" style="width: 128px; min-height: 128px;">
+                            <img src="../assets/uploaded_imgs/history/2008.png" class="img-fluid" alt="...">
+                        </div>
+                    </div>
+                    <div class="text-center pt-2 history-item">
+                        <div class="fw-bold" style="font-size: 36px;">
+                            <p style="color:#006835;">2008</p>
+                        </div>
+                        <div style="color: #737373;">
+                            <p>開發小包裝MOS產品:SOT-523/SOT-723/SOT-563</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 p-2 py-5">
+                    <div class="d-flex justify-content-center">
+                        <div class="d-block" style="width: 128px; min-height: 128px;">
+                            <img src="../assets/uploaded_imgs/history/2007.png" class="img-fluid" alt="...">
+                        </div>
+                    </div>
+                    <div class="text-center pt-2 history-item">
+                        <div class="fw-bold" style="font-size: 36px;">
+                            <p style="color: #006835;">2007</p>
+                        </div>
+                        <div style="color: #737373;">
+                            <p>導入符合HSF限制規範自2007年已全面無鹵素產品</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 p-2 py-5">
+                    <div class="d-flex justify-content-center">
+                        <div class="d-block" style="width: 128px; min-height: 128px;">
+                            <img src="../assets/uploaded_imgs/history/2006.png" class="img-fluid" alt="...">
+                        </div>
+                    </div>
+                    <div class="text-center pt-2 history-item">
+                        <div class="fw-bold" style="font-size: 36px;">
+                            <p style="color: #006835;">2006</p>
+                        </div>
+                        <div style="color: #737373;">
+                            <p>量產ESD二極體、TVS Array產品、FBP包裝產品,推行QC080000以符合國際綠色環保品質需求</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 p-2 py-5">
+                    <div class="d-flex justify-content-center">
+                        <div class="d-block" style="width: 128px; min-height: 128px;">
+                            <img src="../assets/uploaded_imgs/history/2005.png" class="img-fluid" alt="...">
+                        </div>
+                    </div>
+                    <div class="text-center pt-2 history-item">
+                        <div class="fw-bold" style="font-size: 36px;">
+                            <p style="color: #0E6EB8;">2005</p>
+                        </div>
+                        <div style="color: #737373;">
+                            <p>研發ESD二極體、TVS Array產品,規劃增設FBP包裝產品產線推行<a href="http://www.chenmko.com.tw/tw/images/img05.jpg" target="_blank" rel="noopener noreferrer">ISO TS 16949</a>以符合國際品質標準需求</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 p-2 py-5">
+                    <div class="d-flex justify-content-center">
+                        <div class="d-block" style="width: 128px; min-height: 128px;">
+                            <img src="../assets/uploaded_imgs/history/2004.png" class="img-fluid" alt="...">
+                        </div>
+                    </div>
+                    <div class="text-center pt-2 history-item">
+                        <div class="fw-bold" style="font-size: 36px;">
+                            <p style="color: #0E6EB8;">2004</p>
+                        </div>
+                        <div style="color: #737373;">
+                            <p>量產SOD-723及帶電阻電晶體,並預計量產SOT-723,SOT-563,SOT-553包裝產品。積極發展MOS晶片,Low Vf 高電流之小包裝肖特基二極體並增設SMP產線</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 p-2 py-5">
+                    <div class="d-flex justify-content-center">
+                        <div class="d-block" style="width: 128px; min-height: 128px;">
+                            <img src="../assets/uploaded_imgs/history/2002.png" class="img-fluid" alt="...">
+                        </div>
+                    </div>
+                    <div class="text-center pt-2 history-item">
+                        <div class="fw-bold" style="font-size: 36px;">
+                            <p style="color: #0E6EB8;">2002</p>
+                        </div>
+                        <div style="color: #737373;">
+                            <p>開始量產SOD-523、SOD-123、SC-74、SC-74A、SC-88及SC-88A包裝產品</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 p-2 py-5">
+                    <div class="d-flex justify-content-center">
+                        <div class="d-block" style="width: 128px; min-height: 128px;">
+                            <img src="../assets/uploaded_imgs/history/2001.png" class="img-fluid" alt="...">
+                        </div>
+                    </div>
+                    <div class="text-center pt-2 history-item">
+                        <div class="fw-bold" style="font-size: 36px;">
+                            <p style="color: #006835;">2001</p>
+                        </div>
+                        <div style="color: #737373;">
+                            <p>SC-70及SC-59包裝產品投產成功,獲得手機及桌上型電腦…等產品廣泛使用</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 p-2 py-5">
+                    <div class="d-flex justify-content-center">
+                        <div class="d-block" style="width: 128px; min-height: 128px;">
+                            <img src="../assets/uploaded_imgs/history/1999.png" class="img-fluid" alt="...">
+                        </div>
+                    </div>
+                    <div class="text-center pt-2 history-item">
+                        <div class="fw-bold" style="font-size: 36px;">
+                            <p style="color: #006835;">1999</p>
+                        </div>
+                        <div style="color: #737373;">
+                            <p>規劃增設SOT-23及SOD-323包裝產品產線,並開始研發Low Vf 及Low Ir產品</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 p-2 py-5">
+                    <div class="d-flex justify-content-center">
+                        <div class="d-block" style="width: 128px; min-height: 128px;">
+                            <img src="../assets/uploaded_imgs/history/2001.png" class="img-fluid" alt="...">
+                        </div>
+                    </div>
+                    <div class="text-center pt-2 history-item">
+                        <div class="fw-bold" style="font-size: 36px;">
+                            <p style="color: #006835;">2001</p>
+                        </div>
+                        <div style="color: #737373;">
+                            <p>SC-70及SC-59包裝產品投產成功,獲得手機及桌上型電腦…等產品廣泛使用</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 p-2 py-5">
+                    <div class="d-flex justify-content-center">
+                        <div class="d-block" style="width: 128px; min-height: 128px;">
+                            <img src="../assets/uploaded_imgs/history/1999.png" class="img-fluid" alt="...">
+                        </div>
+                    </div>
+                    <div class="text-center pt-2 history-item">
+                        <div class="fw-bold" style="font-size: 36px;">
+                            <p style="color: #006835;">1999</p>
+                        </div>
+                        <div style="color: #737373;">
+                            <p>規劃增設SOT-23及SOD-323包裝產品產線,並開始研發Low Vf 及Low Ir產品</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 p-2 py-5">
+                    <div class="d-flex justify-content-center">
+                        <div class="d-block" style="width: 128px; min-height: 128px;">
+                            <img src="../assets/uploaded_imgs/history/1997.png" class="img-fluid" alt="...">
+                        </div>
+                    </div>
+                    <div class="text-center pt-2 history-item">
+                        <div class="fw-bold" style="font-size: 36px;">
+                            <p style="color: #006835;">1997</p>
+                        </div>
+                        <div style="color: #737373;">
+                            <p>引進德國以EPI製程生產的GPP晶圓,並開始發展EPI GPP產品</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 p-2 py-5">
+                    <div class="d-flex justify-content-center">
+                        <div class="d-block" style="width: 128px; min-height: 128px;">
+                            <img src="../assets/uploaded_imgs/history/1995.png" class="img-fluid" alt="...">
+                        </div>
+                    </div>
+                    <div class="text-center pt-2 history-item">
+                        <div class="fw-bold" style="font-size: 36px;">
+                            <p style="color: #0E6EB8;">1995</p>
+                        </div>
+                        <div style="color: #737373;">
+                            <p><a href="http://www.chenmko.com.tw/tw/images/img04.jpg" target="_blank" rel="noopener noreferrer">ISO9001與ISO14001認證。</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 p-2 py-5">
+                    <div class="d-flex justify-content-center">
+                        <div class="d-block" style="width: 128px; min-height: 128px;">
+                            <img src="../assets/uploaded_imgs/history/1994.png" class="img-fluid" alt="...">
+                        </div>
+                    </div>
+                    <div class="text-center pt-2 history-item">
+                        <div class="fw-bold" style="font-size: 36px;">
+                            <p style="color: #0E6EB8;">1994</p>
+                        </div>
+                        <div style="color: #737373;">
+                            <p>開始量產GPP產品,並開始研發超快速/超級快速恢復式整流器,導入MIS系統</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 p-2 py-5">
+                    <div class="d-flex justify-content-center">
+                        <div class="d-block" style="width: 128px; min-height: 128px;">
+                            <img src="../assets/uploaded_imgs/history/1992.png" class="img-fluid" alt="...">
+                        </div>
+                    </div>
+                    <div class="text-center pt-2 history-item">
+                        <div class="fw-bold" style="font-size: 36px;">
+                            <p style="color: #0E6EB8;">1992</p>
+                        </div>
+                        <div style="color: #737373;">
+                            <p>力勤股份有限公司成立於1992年7月1日</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container d-none d-lg-flex justify-content-center overflow-auto">
+            <style>
+                .history-line-start{
+                    top: 104px; left: 150px; z-index: -999; width: 100%;
+                }
+                .history-line-full{
+                    top: 104px; left: 0px; z-index: -999; width: 100%;
+                }
+                .history-line-end{
+                    top: 104px; right: 150px; z-index: -999; width: 100%;
+                }
+            </style>
+            <div style="width: 1220px !important; min-width: 1220px !important; padding-bottom: 152px;">
+                <div>
+                    <!--Null [] Start.-->
+                    <div style="width: 160px; height: 320px; float: left;"></div>
+                    <!--Null [] End.-->
+                    <!--Null Helf Item Start.-->
+                    <div style="width: 150px; height: 320px; float: left;"></div>
+                    <!--Null Helf Item End.-->
+                    <!-- Item Start. -->
+                    <div style="width: 300px; overflow: hidden; height: 320px; float: left;" class="position-relative">
+                        <div class="history-line-start position-absolute">
+                            <hr class="m-0" style=" border-color: #00000080 !important; opacity: 100;">
+                        </div>
+                        <div class="d-flex justify-content-center align-items-end position-absolute w-100" style="top: 40px; z-index: 999;">
+                            <div class="d-block" style="width: 128px; height: 128px; overflow: hidden;">
+                                <img src="../assets/uploaded_imgs/history/2023.png" class="img-fluid" alt="...">
+                            </div>
+                        </div>
+                        <div class="text-center history-item position-absolute w-100 overflow-auto" style="top: 171px; height:152px;">
+                            <div class="fw-bold" style="font-size: 36px;">
+                                <p style="color: #0E6EB8;">2023</p>
+                            </div>
+                            <div class="px-2" style="color: #737373; height: 96px;">
+                                <p>研發CSP產品 體積更小 效率更高</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item End. -->
+                    <!-- Item Start. -->
+                    <div style="width: 300px; overflow: hidden; height: 320px; float: left;" class="position-relative">
+                        <div class="history-line-full position-absolute">
+                            <hr class="m-0" style=" border-color: #00000080 !important; opacity: 100;">
+                        </div>
+                        <div class="d-flex justify-content-center align-items-end position-absolute w-100" style="top: 40px; z-index: 999;">
+                            <div class="d-block" style="width: 128px; height: 128px; overflow: hidden;">
+                                <img src="../assets/uploaded_imgs/history/2020.png" class="img-fluid" alt="...">
+                            </div>
+                        </div>
+                        <div class="text-center history-item position-absolute w-100 overflow-auto" style="top: 171px; height:152px;">
+                            <div class="fw-bold" style="font-size: 36px;">
+                                <p style="color: #0E6EB8;">2020</p>
+                            </div>
+                            <div class="px-2" style="color: #737373; height: 96px;">
+                                <p>三極管最小包裝 DFN3X3/ DFNT1006A</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item End. -->
+                    <!-- Null Helf Item with Line Start. -->
+                    <div style="width: 150px; overflow: hidden; height: 320px; float: left;" class="position-relative">
+                        <div class="history-line-full position-absolute">
+                            <hr class="m-0" style=" border-color: #00000080 !important; opacity: 100;">
+                        </div>
+                    </div>
+                    <!-- Null Helf Item with Line End. -->
+                    <!-- ] Start. -->
+                    <div style="width: 160px; height: 320px; float: left;" class="position-relative">
+                        <div style="width: 160px; height: 320px; overflow: hidden; left: 0px; top: 104px;" class="position-absolute">
+                            <div style="width: 320px; height: 320px; margin-left: -160px; border-color: #00000080 !important;" class="border border-1 rounded-circle"></div>
+                        </div>
+                    </div>
+                    <!-- ] End. -->
+                </div>
+                
+                <div>
+                    <!-- [ Start. -->
+                    <div style="width: 160px; height: 320px; float: left;" class="position-relative">
+                        <div style="width: 160px; height: 320px; overflow: hidden; left: 0px; top: 104px;" class="position-absolute">
+                            <div style="width: 320px; height: 320px; margin-left: 0px; border-color: #00000080 !important;" class="border border-1 rounded-circle"></div>
+                        </div>
+                    </div>
+                    <!-- [ End. -->
+                    <!-- Item Start. -->
+                    <div style="width: 300px; overflow: hidden; height: 320px; float: left;" class="position-relative">
+                        <div class="history-line-full position-absolute">
+                            <hr class="m-0" style=" border-color: #00000080 !important; opacity: 100;">
+                        </div>
+                        <div class="d-flex justify-content-center align-items-end position-absolute w-100" style="top: 40px; z-index: 999;">
+                            <div class="d-block" style="width: 128px; height: 128px; overflow: hidden;">
+                                <img src="../assets/uploaded_imgs/history/2016.png" class="img-fluid" alt="...">
+                            </div>
+                        </div>
+                        <div class="text-center history-item position-absolute w-100 overflow-auto" style="top: 171px; height:152px;">
+                            <div class="fw-bold" style="font-size: 36px;">
+                                <p style="color: #006835;">2016</p>
+                            </div>
+                            <div class="px-2" style="color: #737373; height: 96px;">
+                                <p>3A-5A產品已經能封裝在SOD-123大小產品應用在筆電相關及薄型產品</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item End. -->
+                    <!-- Item Start. -->
+                    <div style="width: 300px; overflow: hidden; height: 320px; float: left;" class="position-relative">
+                        <div class="history-line-full position-absolute">
+                            <hr class="m-0" style=" border-color: #00000080 !important; opacity: 100;">
+                        </div>
+                        <div class="d-flex justify-content-center align-items-end position-absolute w-100" style="top: 40px; z-index: 999;">
+                            <div class="d-block" style="width: 128px; height: 128px; overflow: hidden;">
+                                <img src="../assets/uploaded_imgs/history/2017.png" class="img-fluid" alt="...">
+                            </div>
+                        </div>
+                        <div class="text-center history-item position-absolute w-100 overflow-auto" style="top: 171px; height:152px;">
+                            <div class="fw-bold" style="font-size: 36px;">
+                                <p style="color: #006835;">2017</p>
+                            </div>
+                            <div class="px-2" style="color: #737373; height: 96px;">
+                                <p>車用規格產品通過AECQ-100認證</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item End. -->
+                    <!-- Item Start. -->
+                    <div style="width: 300px; overflow: hidden; height: 320px; float: left;" class="position-relative">
+                        <div class="history-line-full position-absolute">
+                            <hr class="m-0" style=" border-color: #00000080 !important; opacity: 100;">
+                        </div>
+                        <div class="d-flex justify-content-center align-items-end position-absolute w-100" style="top: 40px; z-index: 999;">
+                            <div class="d-block" style="width: 128px; height: 128px; overflow: hidden;">
+                                <img src="../assets/uploaded_imgs/history/2018.png" class="img-fluid" alt="...">
+                            </div>
+                        </div>
+                        <div class="text-center history-item position-absolute w-100 overflow-auto" style="top: 171px; height:152px;">
+                            <div class="fw-bold" style="font-size: 36px;">
+                                <p style="color: #006835;">2018</p>
+                            </div>
+                            <div class="px-2" style="color: #737373; height: 96px;">
+                                <p>DFN523/DFN923 量產應用在穿戴式裝置小型產品</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item End. -->
+                    <!--Null [] Start.-->
+                    <div style="width: 160px; height: 320px; float: left;"></div>
+                    <!--Null [] End.-->
+                </div>
+
+                <div>
+                    <!--Null [] Start.-->
+                    <div style="width: 160px; height: 320px; float: left;"></div>
+                    <!--Null [] End.-->
+                    <!-- Item Start. -->
+                    <div style="width: 300px; overflow: hidden; height: 320px; float: left;" class="position-relative">
+                        <div class="history-line-full position-absolute">
+                            <hr class="m-0" style=" border-color: #00000080 !important; opacity: 100;">
+                        </div>
+                        <div class="d-flex justify-content-center align-items-end position-absolute w-100" style="top: 40px; z-index: 999;">
+                            <div class="d-block" style="width: 128px; height: 128px; overflow: hidden;">
+                                <img src="../assets/uploaded_imgs/history/2015.png" class="img-fluid" alt="...">
+                            </div>
+                        </div>
+                        <div class="text-center history-item position-absolute w-100 overflow-auto" style="top: 171px; height:152px;">
+                            <div class="fw-bold" style="font-size: 36px;">
+                                <p style="color: #0E6EB8;">2015</p>
+                            </div>
+                            <div class="px-2" style="color: #737373; height: 96px;">
+                                <p>開發SMB-A & SOD-323J & DFN3X2-8L 包裝產品</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item End. -->
+                    <!-- Item Start. -->
+                    <div style="width: 300px; overflow: hidden; height: 320px; float: left;" class="position-relative">
+                        <div class="history-line-full position-absolute">
+                            <hr class="m-0" style=" border-color: #00000080 !important; opacity: 100;">
+                        </div>
+                        <div class="d-flex justify-content-center align-items-end position-absolute w-100" style="top: 40px; z-index: 999;">
+                            <div class="d-block" style="width: 128px; height: 128px; overflow: hidden;">
+                                <img src="../assets/uploaded_imgs/history/2014.png" class="img-fluid" alt="...">
+                            </div>
+                        </div>
+                        <div class="text-center history-item position-absolute w-100 overflow-auto" style="top: 171px; height:152px;">
+                            <div class="fw-bold" style="font-size: 36px;">
+                                <p style="color: #0E6EB8;">2014</p>
+                            </div>
+                            <div class="px-2" style="color: #737373; height: 96px;">
+                                <p>開發DFN0603包裝產品</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item End. -->
+                    <!-- Item Start. -->
+                    <div style="width: 300px; overflow: hidden; height: 320px; float: left;" class="position-relative">
+                        <div class="history-line-full position-absolute">
+                            <hr class="m-0" style=" border-color: #00000080 !important; opacity: 100;">
+                        </div>
+                        <div class="d-flex justify-content-center align-items-end position-absolute w-100" style="top: 40px; z-index: 999;">
+                            <div class="d-block" style="width: 128px; height: 128px; overflow: hidden;">
+                                <img src="../assets/uploaded_imgs/history/2009.png" class="img-fluid" alt="...">
+                            </div>
+                        </div>
+                        <div class="text-center history-item position-absolute w-100 overflow-auto" style="top: 171px; height:152px;">
+                            <div class="fw-bold" style="font-size: 36px;">
+                                <p style="color: #0E6EB8;">2009</p>
+                            </div>
+                            <div class="px-2" style="color: #737373; height: 96px;">
+                                <p>開發低電容TVS diodes </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item End. -->
+                    <!-- ] Start. -->
+                    <div style="width: 160px; height: 320px; float: left;" class="position-relative">
+                        <div style="width: 160px; height: 320px; overflow: hidden; left: 0px; top: 104px;" class="position-absolute">
+                            <div style="width: 320px; height: 320px; margin-left: -160px; border-color: #00000080 !important;" class="border border-1 rounded-circle"></div>
+                        </div>
+                    </div>
+                    <!-- ] End. -->
+                </div>
+
+                <div>
+                    <!-- [ Start. -->
+                    <div style="width: 160px; height: 320px; float: left;" class="position-relative">
+                        <div style="width: 160px; height: 320px; overflow: hidden; left: 0px; top: 104px;" class="position-absolute">
+                            <div style="width: 320px; height: 320px; margin-left: 0px; border-color: #00000080 !important;" class="border border-1 rounded-circle"></div>
+                        </div>
+                    </div>
+                    <!-- [ End. -->
+                    <!-- Item Start. -->
+                    <div style="width: 300px; overflow: hidden; height: 320px; float: left;" class="position-relative">
+                        <div class="history-line-full position-absolute">
+                            <hr class="m-0" style=" border-color: #00000080 !important; opacity: 100;">
+                        </div>
+                        <div class="d-flex justify-content-center align-items-end position-absolute w-100" style="top: 40px; z-index: 999;">
+                            <div class="d-block" style="width: 128px; height: 128px; overflow: hidden;">
+                                <img src="../assets/uploaded_imgs/history/2006.png" class="img-fluid" alt="...">
+                            </div>
+                        </div>
+                        <div class="text-center history-item position-absolute w-100 overflow-auto" style="top: 171px; height:152px;">
+                            <div class="fw-bold" style="font-size: 36px;">
+                                <p style="color: #006835;">2006</p>
+                            </div>
+                            <div class="px-2" style="color: #737373; height: 96px;">
+                                <p>量產ESD二極體、TVS Array產品、FBP包裝產品,推行QC080000以符合國際綠色環保品質需求</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item End. -->
+                    <!-- Item Start. -->
+                    <div style="width: 300px; overflow: hidden; height: 320px; float: left;" class="position-relative">
+                        <div class="history-line-full position-absolute">
+                            <hr class="m-0" style=" border-color: #00000080 !important; opacity: 100;">
+                        </div>
+                        <div class="d-flex justify-content-center align-items-end position-absolute w-100" style="top: 40px; z-index: 999;">
+                            <div class="d-block" style="width: 128px; height: 128px; overflow: hidden;">
+                                <img src="../assets/uploaded_imgs/history/2007.png" class="img-fluid" alt="...">
+                            </div>
+                        </div>
+                        <div class="text-center history-item position-absolute w-100 overflow-auto" style="top: 171px; height:152px;">
+                            <div class="fw-bold" style="font-size: 36px;">
+                                <p style="color: #006835;">2007</p>
+                            </div>
+                            <div class="px-2" style="color: #737373; height: 96px;">
+                                <p>導入符合HSF限制規範自2007年已全面無鹵素產品</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item End. -->
+                    <!-- Item Start. -->
+                    <div style="width: 300px; overflow: hidden; height: 320px; float: left;" class="position-relative">
+                        <div class="history-line-full position-absolute">
+                            <hr class="m-0" style=" border-color: #00000080 !important; opacity: 100;">
+                        </div>
+                        <div class="d-flex justify-content-center align-items-end position-absolute w-100" style="top: 40px; z-index: 999;">
+                            <div class="d-block" style="width: 128px; height: 128px; overflow: hidden;">
+                                <img src="../assets/uploaded_imgs/history/2008.png" class="img-fluid" alt="...">
+                            </div>
+                        </div>
+                        <div class="text-center history-item position-absolute w-100 overflow-auto" style="top: 171px; height:152px;">
+                            <div class="fw-bold" style="font-size: 36px;">
+                                <p style="color:#006835;">2008</p>
+                            </div>
+                            <div class="px-2" style="color: #737373; height: 96px;">
+                                <p>開發小包裝MOS產品:SOT-523/SOT-723/SOT-563</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item End. -->
+                    <!--Null [] Start.-->
+                    <div style="width: 160px; height: 320px; float: left;"></div>
+                    <!--Null [] End.-->
+                </div>
+
+                <div>    
+                    <!--Null [] Start.-->
+                    <div style="width: 160px; height: 320px; float: left;"></div>
+                    <!--Null [] End.-->
+                    <!-- Item Start. -->
+                    <div style="width: 300px; overflow: hidden; height: 320px; float: left;" class="position-relative">
+                        <div class="history-line-full position-absolute">
+                            <hr class="m-0" style=" border-color: #00000080 !important; opacity: 100;">
+                        </div>
+                        <div class="d-flex justify-content-center align-items-end position-absolute w-100" style="top: 40px; z-index: 999;">
+                            <div class="d-block" style="width: 128px; height: 128px; overflow: hidden;">
+                                <img src="../assets/uploaded_imgs/history/2005.png" class="img-fluid" alt="...">
+                            </div>
+                        </div>
+                        <div class="text-center history-item position-absolute w-100 overflow-auto" style="top: 171px; height:152px;">
+                            <div class="fw-bold" style="font-size: 36px;">
+                                <p style="color: #0E6EB8;">2005</p>
+                            </div>
+                            <div class="px-2" style="color: #737373; height: 96px;">
+                                <p>研發ESD二極體、TVS Array產品,規劃增設FBP包裝產品產線推行<a href="http://www.chenmko.com.tw/tw/images/img05.jpg" target="_blank" rel="noopener noreferrer">ISO TS 16949</a>以符合國際品質標準需求</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item End. -->
+                    <!-- Item Start. -->
+                    <div style="width: 300px; overflow: hidden; height: 320px; float: left;" class="position-relative">
+                        <div class="history-line-full position-absolute">
+                            <hr class="m-0" style=" border-color: #00000080 !important; opacity: 100;">
+                        </div>
+                        <div class="d-flex justify-content-center align-items-end position-absolute w-100" style="top: 40px; z-index: 999;">
+                            <div class="d-block" style="width: 128px; height: 128px; overflow: hidden;">
+                                <img src="../assets/uploaded_imgs/history/2004.png" class="img-fluid" alt="...">
+                            </div>
+                        </div>
+                        <div class="text-center history-item position-absolute w-100 overflow-auto" style="top: 171px; height:152px;">
+                            <div class="fw-bold" style="font-size: 36px;">
+                                <p style="color: #0E6EB8;">2004</p>
+                            </div>
+                            <div class="px-2" style="color: #737373; height: 96px;">
+                                <p>量產SOD-723及帶電阻電晶體,並預計量產SOT-723,SOT-563,SOT-553包裝產品。積極發展MOS晶片,Low Vf 高電流之小包裝肖特基二極體並增設SMP產線</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item End. -->
+                    <!-- Item Start. -->
+                    <div style="width: 300px; overflow: hidden; height: 320px; float: left;" class="position-relative">
+                        <div class="history-line-full position-absolute">
+                            <hr class="m-0" style=" border-color: #00000080 !important; opacity: 100;">
+                        </div>
+                        <div class="d-flex justify-content-center align-items-end position-absolute w-100" style="top: 40px; z-index: 999;">
+                            <div class="d-block" style="width: 128px; height: 128px; overflow: hidden;">
+                                <img src="../assets/uploaded_imgs/history/2002.png" class="img-fluid" alt="...">
+                            </div>
+                        </div>
+                        <div class="text-center history-item position-absolute w-100 overflow-auto" style="top: 171px; height:152px;">
+                            <div class="fw-bold" style="font-size: 36px;">
+                                <p style="color: #0E6EB8;">2002</p>
+                            </div>
+                            <div class="px-2" style="color: #737373; height: 96px;">
+                                <p>開始量產SOD-523、SOD-123、SC-74、SC-74A、SC-88及SC-88A包裝產品</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item End. -->
+                    <!-- ] Start. -->
+                    <div style="width: 160px; height: 320px; float: left;" class="position-relative">
+                        <div style="width: 160px; height: 320px; overflow: hidden; left: 0px; top: 104px;" class="position-absolute">
+                            <div style="width: 320px; height: 320px; margin-left: -160px; border-color: #00000080 !important;" class="border border-1 rounded-circle"></div>
+                        </div>
+                    </div>
+                    <!-- ] End. -->
+                </div>
+
+                <div>
+                    <!-- [ Start. -->
+                    <div style="width: 160px; height: 320px; float: left;" class="position-relative">
+                        <div style="width: 160px; height: 320px; overflow: hidden; left: 0px; top: 104px;" class="position-absolute">
+                            <div style="width: 320px; height: 320px; margin-left: 0px; border-color: #00000080 !important;" class="border border-1 rounded-circle"></div>
+                        </div>
+                    </div>
+                    <!-- [ End. -->
+                    <!-- Item Start. -->
+                    <div style="width: 300px; overflow: hidden; height: 320px; float: left;" class="position-relative">
+                        <div class="history-line-full position-absolute">
+                            <hr class="m-0" style=" border-color: #00000080 !important; opacity: 100;">
+                        </div>
+                        <div class="d-flex justify-content-center align-items-end position-absolute w-100" style="top: 40px; z-index: 999;">
+                            <div class="d-block" style="width: 128px; height: 128px; overflow: hidden;">
+                                <img src="../assets/uploaded_imgs/history/1997.png" class="img-fluid" alt="...">
+                            </div>
+                        </div>
+                        <div class="text-center history-item position-absolute w-100 overflow-auto" style="top: 171px; height:152px;">
+                            <div class="fw-bold" style="font-size: 36px;">
+                                <p style="color: #006835;">1997</p>
+                            </div>
+                            <div class="px-2" style="color: #737373; height: 96px;">
+                                <p>引進德國以EPI製程生產的GPP晶圓,並開始發展EPI GPP產品</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item End. -->
+                    <!-- Item Start. -->
+                    <div style="width: 300px; overflow: hidden; height: 320px; float: left;" class="position-relative">
+                        <div class="history-line-full position-absolute">
+                            <hr class="m-0" style=" border-color: #00000080 !important; opacity: 100;">
+                        </div>
+                        <div class="d-flex justify-content-center align-items-end position-absolute w-100" style="top: 40px; z-index: 999;">
+                            <div class="d-block" style="width: 128px; height: 128px; overflow: hidden;">
+                                <img src="../assets/uploaded_imgs/history/1999.png" class="img-fluid" alt="...">
+                            </div>
+                        </div>
+                        <div class="text-center history-item position-absolute w-100 overflow-auto" style="top: 171px; height:152px;">
+                            <div class="fw-bold" style="font-size: 36px;">
+                                <p style="color: #006835;">1999</p>
+                            </div>
+                            <div class="px-2" style="color: #737373; height: 96px;">
+                                <p>規劃增設SOT-23及SOD-323包裝產品產線,並開始研發Low Vf 及Low Ir產品</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item End. -->
+                    <!-- Item Start. -->
+                    <div style="width: 300px; overflow: hidden; height: 320px; float: left;" class="position-relative">
+                        <div class="history-line-full position-absolute">
+                            <hr class="m-0" style=" border-color: #00000080 !important; opacity: 100;">
+                        </div>
+                        <div class="d-flex justify-content-center align-items-end position-absolute w-100" style="top: 40px; z-index: 999;">
+                            <div class="d-block" style="width: 128px; height: 128px; overflow: hidden;">
+                                <img src="../assets/uploaded_imgs/history/2001.png" class="img-fluid" alt="...">
+                            </div>
+                        </div>
+                        <div class="text-center history-item position-absolute w-100 overflow-auto" style="top: 171px; height:152px;">
+                            <div class="fw-bold" style="font-size: 36px;">
+                                <p style="color: #006835;">2001</p>
+                            </div>
+                            <div class="px-2" style="color: #737373; height: 96px;">
+                                <p>SC-70及SC-59包裝產品投產成功,獲得手機及桌上型電腦…等產品廣泛使用</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item End. -->
+                    <!--Null [] Start.-->
+                    <div style="width: 160px; height: 320px; float: left;"></div>
+                    <!--Null [] End.-->
+                </div>
+
+                <div>
+                    <!--Null [] Start.-->
+                    <div style="width: 160px; height: 320px; float: left;"></div>
+                    <!--Null [] End.-->
+                    <!-- Item Start. -->
+                    <div style="width: 300px; overflow: hidden; height: 320px; float: left;" class="position-relative">
+                        <div class="history-line-full position-absolute">
+                            <hr class="m-0" style=" border-color: #00000080 !important; opacity: 100;">
+                        </div>
+                        <div class="d-flex justify-content-center align-items-end position-absolute w-100" style="top: 40px; z-index: 999;">
+                            <div class="d-block" style="width: 128px; height: 128px; overflow: hidden;">
+                                <img src="../assets/uploaded_imgs/history/1995.png" class="img-fluid" alt="...">
+                            </div>
+                        </div>
+                        <div class="text-center history-item position-absolute w-100 overflow-auto" style="top: 171px; height:152px;">
+                            <div class="fw-bold" style="font-size: 36px;">
+                                <p style="color: #0E6EB8;">1995</p>
+                            </div>
+                            <div class="px-2" style="color: #737373; height: 96px;">
+                                <p><a href="http://www.chenmko.com.tw/tw/images/img04.jpg" target="_blank" rel="noopener noreferrer">ISO9001與ISO14001認證。</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item End. -->
+                    <!-- Item Start. -->
+                    <div style="width: 300px; overflow: hidden; height: 320px; float: left;" class="position-relative">
+                        <div class="history-line-full position-absolute">
+                            <hr class="m-0" style=" border-color: #00000080 !important; opacity: 100;">
+                        </div>
+                        <div class="d-flex justify-content-center align-items-end position-absolute w-100" style="top: 40px; z-index: 999;">
+                            <div class="d-block" style="width: 128px; height: 128px; overflow: hidden;">
+                                <img src="../assets/uploaded_imgs/history/1994.png" class="img-fluid" alt="...">
+                            </div>
+                        </div>
+                        <div class="text-center history-item position-absolute w-100 overflow-auto" style="top: 171px; height:152px;">
+                            <div class="fw-bold" style="font-size: 36px;">
+                                <p style="color: #0E6EB8;">1994</p>
+                            </div>
+                            <div class="px-2" style="color: #737373; height: 96px;">
+                                <p>開始量產GPP產品,並開始研發超快速/超級快速恢復式整流器,導入MIS系統</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item End. -->
+                    <!-- Item Start. -->
+                    <div style="width: 300px; overflow: hidden; height: 320px; float: left;" class="position-relative">
+                        <div class="history-line-end position-absolute">
+                            <hr class="m-0" style=" border-color: #00000080 !important; opacity: 100;">
+                        </div>
+                        <div class="d-flex justify-content-center align-items-end position-absolute w-100" style="top: 40px; z-index: 999;">
+                            <div class="d-block" style="width: 128px; height: 128px; overflow: hidden;">
+                                <img src="../assets/uploaded_imgs/history/1992.png" class="img-fluid" alt="...">
+                            </div>
+                        </div>
+                        <div class="text-center history-item position-absolute w-100 overflow-auto" style="top: 171px; height:152px;">
+                            <div class="fw-bold" style="font-size: 36px;">
+                                <p style="color: #0E6EB8;">1992</p>
+                            </div>
+                            <div class="px-2" style="color: #737373; height: 96px;">
+                                <p>力勤股份有限公司成立於1992年7月1日</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item End. -->
+                    <!--Null [] Start.-->
+                    <div style="width: 160px; height: 320px; float: left;"></div>
+                    <!--Null [] End.-->
+                </div>
+
+                <div style="clear: both;"></div>
+            </div>
+        </div>
+        <div>
+            <div class="d-none">
+                <!-- [ Start. -->
+                <div style="width: 160px; height: 320px; float: left;" class="position-relative">
+                    <div style="width: 160px; height: 320px; overflow: hidden; left: 0px; top: -215px;" class="position-absolute">
+                        <div style="width: 320px; height: 320px; margin-left: 0px; border-color: #00000080 !important;" class="border border-1 rounded-circle"></div>
+                    </div>
+                </div>
+                <!-- [ End. -->
+
+                <!-- ] Start. -->
+                <div style="width: 160px; height: 320px; float: left;" class="position-relative">
+                    <div style="width: 160px; height: 320px; overflow: hidden; left: 0px; top: 104px;" class="position-absolute">
+                        <div style="width: 320px; height: 320px; margin-left: -160px; border-color: #00000080 !important;" class="border border-1 rounded-circle"></div>
+                    </div>
+                </div>
+                <!-- ] End. -->
+                
+                <!--Null [] Start.-->
+                <div style="width: 160px; height: 320px; float: left;"></div>
+                <!--Null [] End.-->
+
+
+                <!--Null Helf Item Start.-->
+                <div style="width: 150px; height: 320px; float: left;"></div>
+                <!--Null Helf Item End.-->
+
+                <!--Null Item Start.-->
+                <div style="width: 300px; height: 320px; float: left;"></div>
+                <!--Null Item End.-->
+
+
+                <!-- Null Helf Item with Line Start. -->
+                <div style="width: 150px; overflow: hidden; height: 320px; float: left;" class="position-relative">
+                    <div class="history-line-full position-absolute">
+                        <hr class="m-0" style=" border-color: #00000080 !important; opacity: 100;">
+                    </div>
+                </div>
+                <!-- Null Helf Item with Line End. -->
+
+                <!-- Null Full Item Start. -->
+                <div style="width: 300px; overflow: hidden; height: 320px; float: left;" class="position-relative">
+                    <div class="history-line-full position-absolute">
+                        <hr class="m-0" style=" border-color: #00000080 !important; opacity: 100;">
+                    </div>
+                </div>
+                <!-- Null Helf Item End. -->
+
+                <!-- Item Start. -->
+                <div style="width: 300px; overflow: hidden; height: 320px; float: left;" class="position-relative">
+                    <div class="history-line-full position-absolute">
+                        <hr class="m-0" style=" border-color: #00000080 !important; opacity: 100;">
+                    </div>
+                    <div class="d-flex justify-content-center align-items-end position-absolute w-100" style="top: 40px; z-index: 999;">
+                        <div class="d-block" style="width: 128px; height: 128px; overflow: hidden;">
+                            <img src="../assets/uploaded_imgs/history/2023.png" class="img-fluid" alt="...">
+                        </div>
+                    </div>
+                    <div class="text-center history-item position-absolute w-100 overflow-auto" style="top: 171px; height:152px;">
+                        <div class="fw-bold" style="font-size: 36px;">
+                            <p style="color: #0E6EB8;">2023</p>
+                        </div>
+                        <div class="px-2" style="color: #737373; height: 96px;">
+                            <p>研發CSP產品 體積更小 效率更高</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item End. -->
+
+            </div>
+        </div>
+    </section>
+    <!--Footer-->
+    <footer>
+        <style>
+            .footer-item a{
+                text-decoration: underline;
+            }
+            .footer-item:hover a{
+                text-decoration: none;
+            }
+        </style>
+        <div style="background: #565656; color: #ffffff;">
+            <div class="container py-5 d-flex d-lg-block justify-content-center">
+                <div class="row d-inline-block d-lg-flex">
+                    <div class="col-12 col-lg-4 pb-5">
+                        <p class="footer-title">台灣 業務部門</p>
+                        <!--信箱格式-->
+                        <p class="footer-item"> 
+                            <i class="bi bi-envelope-fill me-1"></i>
+                            <a class="text-reset"
+                            href="mailto://elaine@chenmko.com.tw">elaine@chenmko.com.tw</a>
+                        </p>
+                        <!--電話格式-->
+                        <p class="footer-item">
+                            <img src="../assets/basic_imgs/icon_phone_white.svg" class="me-1" width="16px">
+                            <a class="text-reset"
+                            href="tel:02-2913-5566 #107">02-2913-5566 #107</a>
+                        </p>
+                    </div>
+                    <div class="col-12 col-lg-4 pb-5">
+                        <p class="footer-title">代理商</p>
+                        <!--信箱格式-->
+                        <p class="footer-item"> 
+                            <i class="bi bi-envelope-fill me-1"></i>
+                            <a class="text-reset"
+                               href="mailto://James_eoh@yeah.net">James_eoh@yeah.net</a>
+                        </p>
+                        <!--電話格式-->
+                        <p class="footer-item">
+                            <img src="../assets/basic_imgs/icon_phone_white.svg" class="me-1" width="16px">
+                            <a class="text-reset"
+                               href="tel:159-9563-9278">159-9563-9278</a>
+                        </p>
+                        <!--地址格式-->
+                        <p class="footer-item">
+                            <i class="bi bi-geo-alt-fill me-1"></i>
+                            新店區中興路二段190號5樓之2
+                        </p>
+                    </div>
+                    <div class="col-12 col-lg-4 pb-5">
+                        <p class="footer-title">總公司</p>
+                        <!--地址格式-->
+                        <p class="footer-item">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            新店區中興路二段190號5樓之2
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container pb-5">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="text-center">COPYRIGHT © 2023 CHENMKO CO., LTD. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</html>
