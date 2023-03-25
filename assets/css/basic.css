@@ -1,5 +1,5 @@
 body{
-    font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'Noto Sans TC', sans-serif !important; 
 }
 .hoverLink{
     text-decoration: underline;
@@ -31,4 +31,31 @@ body{
 }
 .separator:not(:empty)::after {
     margin-left: .5em;
+}
+
+#navbarNav ul li .nav-link{
+    color: #6ea8d4;
+}
+#navbarNav ul li .nav-link:hover{
+    color: #316cb3;
+}
+#category-list{
+    background-color: #0E6EB8;
+    color: white;
+}
+#category-list li a{
+    color: white;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+#category-list li a:hover{
+    background-color: #6ea8d4;
+    color: white;
+}
+@media (min-width: 992px) {
+    #category-list {
+        left: -13px;
+    }
 }

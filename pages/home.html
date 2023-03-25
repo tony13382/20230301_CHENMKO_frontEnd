@@ -63,25 +63,6 @@
             </div>
         </div>
         <!-- Page Link List -->
-        <style>
-            #navbarNav ul li .nav-link{
-                color: #3c85df;
-            }
-            #navbarNav ul li .nav-link:hover{
-                color: #316cb3;
-            }
-            #category-list{
-                background-color: #316cb3;
-                color: white;
-            }
-            #category-list li a{
-                color: white;
-            }
-            #category-list li a:hover{
-                background-color: #3c85df;
-                color: white;
-            }
-        </style>
         <div class="navbar navbar-expand-lg ">
             <div class="container d-flex flex-wrap py-2">
                 <a class="navbar-brand" href="#">
@@ -125,21 +106,29 @@
         </div>
     </nav>
     <section>
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselSlidesOnly" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="../assets/basic_imgs/example_carousel_image_lg.jpg" class="w-100 d-none d-lg-block" alt="for destop(lg) image">
-                    <img src="../assets/basic_imgs/example_carousel_image_sm.jpg" class="w-100 d-block d-lg-none" alt="for mobile(sm) image">
+                    <img src="../assets/basic_imgs/example_carousel_image1_lg.webp" class="w-100 d-none d-lg-block" alt="for destop(lg) image">
+                    <img src="../assets/basic_imgs/example_carousel_image1_sm.webp" class="w-100 d-block d-lg-none" alt="for mobile(sm) image">
                 </div>
                 <div class="carousel-item">
-                    <img src="../assets/basic_imgs/example_carousel_image_lg.jpg" class="w-100 d-none d-lg-block" alt="for destop(lg) image">
-                    <img src="../assets/basic_imgs/example_carousel_image_sm.jpg" class="w-100 d-block d-lg-none" alt="for mobile(sm) image">
+                    <img src="../assets/basic_imgs/example_carousel_image2_lg.webp" class="w-100 d-none d-lg-block" alt="for destop(lg) image">
+                    <img src="../assets/basic_imgs/example_carousel_image2_sm.webp" class="w-100 d-block d-lg-none" alt="for mobile(sm) image">
                 </div>
                 <div class="carousel-item">
-                    <img src="../assets/basic_imgs/example_carousel_image_lg.jpg" class="w-100 d-none d-lg-block" alt="for destop(lg) image">
-                    <img src="../assets/basic_imgs/example_carousel_image_sm.jpg" class="w-100 d-block d-lg-none" alt="for mobile(sm) image">
+                    <img src="../assets/basic_imgs/example_carousel_image3_lg.webp" class="w-100 d-none d-lg-block" alt="for destop(lg) image">
+                    <img src="../assets/basic_imgs/example_carousel_image3_sm.webp" class="w-100 d-block d-lg-none" alt="for mobile(sm) image">
                 </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselSlidesOnly" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselSlidesOnly" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
 
         <div class="container">
@@ -197,22 +186,26 @@
             <div style="background-color: #FFFFFFA6; padding: 8rem 0rem;">
                 <div class="container">
                     <div class="row d-flex align-items-center">
-                        <div class="col-12 col-lg-6 py-3">
-                            <p class="m-0 fs-4 text-lg-start text-center" style="letter-spacing: 0.07em;">
-                                總公司位於台灣新北市的力勤股份有限公司<br>
-                                成立於1992年7月 是一個擁有員工超過2500人<br>
-                                分佈於4個國家的中小企業<br>
-                                良好的團隊合作之鑰才能開啟成功之門<br>
-                                力勤30幾年 秉持著服務顧客至上  <br>
-                                引領我們達到客戶的高滿意度 
-                            </p>
+                        <div class="col-12 col-lg-6 py-3 justify-content-center d-flex">
+                            <div class="d-inline-block">
+                                <p class="m-0 fs-4 text-lg-start text-center" style="letter-spacing: 0.07em;">
+                                    總公司位於台灣新北市的力勤股份有限公司<br>
+                                    成立於1992年7月 是一個擁有員工超過2500人<br>
+                                    分佈於4個國家的中小企業<br>
+                                    良好的團隊合作之鑰才能開啟成功之門<br>
+                                    力勤30幾年 秉持著服務顧客至上  <br>
+                                    引領我們達到客戶的高滿意度 
+                                </p>
+                            </div>
                         </div>
-                        <div class="col-12 col-lg-6">
-                            <p class="m-0 fs-4 text-lg-start text-center" style="letter-spacing: 0.21em; line-height: 3.5rem;">
-                                <i class="bi bi-check-circle-fill me-2" style="color: #6999c9;"></i><span class="fw-bold">穩定的品質 </span><br>
-                                <i class="bi bi-check-circle-fill me-2" style="color: #6999c9;"></i><span class="fw-bold">穩定的供貨 </span><br>
-                                <i class="bi bi-check-circle-fill me-2" style="color: #6999c9;"></i><span class="fw-bold">持續開發世界級的功率元件</span>
-                            </p>
+                        <div class="col-12 col-lg-6 justify-content-center d-flex">
+                            <div class="d-inline-block">
+                                <p class="m-0 fs-4 text-lg-start text-center" style="letter-spacing: 0.21em; line-height: 3.5rem;">
+                                    <i class="bi bi-check-circle-fill me-2" style="color: #6999c9;"></i><span class="fw-bolder">穩定的品質 </span><br>
+                                    <i class="bi bi-check-circle-fill me-2" style="color: #6999c9;"></i><span class="fw-bolder">穩定的供貨 </span><br>
+                                    <i class="bi bi-check-circle-fill me-2" style="color: #6999c9;"></i><span class="fw-bolder">持續開發世界級的功率元件</span>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -230,7 +223,7 @@
                 }
             </style>
             <div class="pb-4">
-                <div class="separator fs-4 fw-bold">新發明專利</div>
+                <div class="separator fs-4 fw-bolder">新發明專利</div>
             </div>
             <div class="">
                 <div class="lh-lg">
@@ -249,7 +242,7 @@
             <div class="container">
                 <div class="row justify-content-end">
                     <div class="col-12 col-lg-6 text-center" style="background: rgba(14, 110, 184, 0.6); color: #ffffff; padding: 3.75rem 4.5rem;">
-                        <p class="m-0 fw-bold pb-3 fs-3" style="letter-spacing: 0.21em;">組織溫室氣體排放目標及措施</p>
+                        <p class="m-0 fw-bolder pb-3 fs-3" style="letter-spacing: 0.21em;">組織溫室氣體排放目標及措施</p>
                         <p class="m-0" style="font-size: 1.5rem; letter-spacing: 0.07em; font-weight: 400;">
                             工廠2020 年碳排放21264噸，2021 年碳排放18045噸，同比減少3219噸。<br><br>
                             工廠制定以2020 年為基準年，實現在2030 年温室氣體排放較2020年減少50%的目標，為達到減排目標，工廠制定了一系列減排措施</p>
@@ -278,13 +271,13 @@
                     </style>
                     <div class="col-12 d-flex justify-content-center border-round-20 effvevrwvvvvvb43t34tf">
                         <p class="text-center text-break" style="max-width: 576px; color: #565656; font-size: 1.5rem;">
-                            <span class="fw-bold" style="color: #0E6EB8; font-size: 1.75rem;">無衝突礦產政策</span><br>
+                            <span class="fw-bolder" style="color: #0E6EB8; font-size: 1.75rem;">無衝突礦產政策</span><br>
                             <br>
                             對於來自衝突或高風險地區的3TG(鉭Ta，錫Sn，鎢W，金Au的縮寫)、鈷Co等礦物、通過走私貿易途徑、被非政府武裝控制或非法的軍事派別控制的金屬礦產均屬於衝突礦產。<br>
                             <br>
                             力勤要求供應商遵守責任商業聯盟行為準則(RBA)，只從對環境和社會負責的供應商採購材料，全體供應商不能採購和使用衝突礦產，符合無衝突礦產要求，並從責任礦產倡議(RMI)確認的責任礦產保證流程(RMAP)認證冶煉廠和精煉廠清單中採購（<a href="http://www.responsiblemineralsinitiative.org/" class="text-reset" target="_blank" rel="noopener noreferrer">http://www.responsiblemineralsinitiative.org/</a>）。所有供應商應採購通過RMAP認證符合無衝突金屬要求的冶煉廠和精煉廠的金屬。沒有通過RMAP認證的冶煉廠和精煉廠必須從供應鏈中移除。<br>
                             <br><br>
-                            <span class="fw-bold" style="color: #0E6EB8; font-size: 1.75rem;">供應商要求</span><br>
+                            <span class="fw-bolder" style="color: #0E6EB8; font-size: 1.75rem;">供應商要求</span><br>
                             <br>
                             要求供應商，如果有衝突礦產用於提供力勤的產品時，請立即告知並採取替代方案，並按照我司要求實施相關整改措施，經確認整改完成後才能繼續供貨，以確保完全符合無衝突要求，涉及衝突礦產的相關產品材料按照不合格品進行處理。要求供應商與供應鏈每年進行商業上合理的盡責調查，以保證提供給力勤的產品中使用的金屬並不來源於衝突礦產。<br>
                             <br>
@@ -340,7 +333,9 @@
                         <!--地址格式-->
                         <p class="footer-item">
                             <i class="bi bi-geo-alt-fill me-1"></i>
-                            新店區中興路二段190號5樓之2
+                            <a class="text-reset" target="_blank"
+                               href="https://maps.google.com/maps?q=新店區中興路二段190號5樓之28">新店區中興路二段190號5樓之28</a>
+                            
                         </p>
                     </div>
                     <div class="col-12 col-lg-4 pb-5">
@@ -348,7 +343,8 @@
                         <!--地址格式-->
                         <p class="footer-item">
                             <i class="bi bi-geo-alt-fill"></i>
-                            新店區中興路二段190號5樓之2
+                            <a class="text-reset" target="_blank"
+                               href="https://maps.google.com/maps?q=新店區中興路二段190號5樓之2">新店區中興路二段190號5樓之2</a>
                         </p>
                     </div>
                 </div>
