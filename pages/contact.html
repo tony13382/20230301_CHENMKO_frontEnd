@@ -61,25 +61,6 @@
             </div>
         </div>
         <!-- Page Link List -->
-        <style>
-            #navbarNav ul li .nav-link{
-                color: #3c85df;
-            }
-            #navbarNav ul li .nav-link:hover{
-                color: #316cb3;
-            }
-            #category-list{
-                background-color: #316cb3;
-                color: white;
-            }
-            #category-list li a{
-                color: white;
-            }
-            #category-list li a:hover{
-                background-color: #3c85df;
-                color: white;
-            }
-        </style>
         <div class="navbar navbar-expand-lg ">
             <div class="container d-flex flex-wrap py-2">
                 <a class="navbar-brand" href="#">
@@ -128,10 +109,10 @@
                     background-repeat: no-repeat; background-size: cover;">
             <style>
                 .pageTitle h1{
-                    color: rgba(255, 255, 255, 0.5);
-                    font-weight: 700;
-                    font-size: 6rem;
-                }
+                        color: rgba(255, 255, 255, 0.5);
+                        font-weight: 700;
+                        font-size: calc(1.375rem + 6vw);
+                    }  
             </style>
             <div class="container">
                 <div class="row">
@@ -148,7 +129,7 @@
             <style>
                 .contact_area .contact-table-item a{
                     text-decoration: none;
-                    font-size: 1.5rem;
+                    font-size: 1.25rem;
                 }
                 .contact_area .contact-table-item a:hover{
                     text-decoration: underline;
@@ -162,7 +143,7 @@
                 }
                 .contact-table-item i{
                     color: #0E6EB8;
-                    font-size: 1.25rem;
+                    font-size: 1rem;
                 }
                 
                 @media (min-width: 992px) {
@@ -183,7 +164,7 @@
                         </p>
                         <!--電話格式-->
                         <p class="contact-table-item d-flex align-items-center">
-                            <img src="../assets/basic_imgs/icon_phone_blue.svg" class="me-2" width="20px">
+                            <img src="../assets/basic_imgs/icon_phone_blue.svg" class="me-2" width="16px">
                             <a class="text-reset"
                             href="tel:02-2913-5566 #107">02-2913-5566 #107</a>
                         </p>
@@ -200,7 +181,7 @@
                         </p>
                         <!--電話格式-->
                         <p class="contact-table-item d-flex align-items-center">
-                            <img src="../assets/basic_imgs/icon_phone_blue.svg" class="me-2" width="20px">
+                            <img src="../assets/basic_imgs/icon_phone_blue.svg" class="me-2" width="16px">
                             <a class="text-reset"
                                 href="tel:159-9563-9278">159-9563-9278</a>
                         </p>
@@ -216,13 +197,13 @@
                         </p>
                         <!--電話格式-->
                         <p class="contact-table-item d-flex align-items-center">
-                            <img src="../assets/basic_imgs/icon_phone_blue.svg" class="me-2" width="20px">
+                            <img src="../assets/basic_imgs/icon_phone_blue.svg" class="me-2" width="16px">
                             <a class="text-reset"
                                 href="tel:+886-2-2913-5566">+886-2-2913-5566</a>
                         </p>
                         <!--傳真格式-->
                         <p class="contact-table-item d-flex align-items-center">
-                            <img src="../assets/basic_imgs/icon_tax_blue.svg" class="me-2" width="20px">
+                            <img src="../assets/basic_imgs/icon_tax_blue.svg" class="me-2" width="16px">
                             <a class="text-reset">+886-2-2916-1085</a>
                         </p>
                         <!--信箱格式-->
@@ -259,14 +240,14 @@
                     <div class="col-12">
                         <form style="color: #ffffff;" id="contact-form">
                             <div class="row g-3 align-items-top p-2">
-                                <div class="pe-0" style="width: 10ch;">
+                                <div class="pe-0" style="width: 11ch;">
                                     <label for="inputPassword6" class="col-form-label">*公司名稱｜</label>
                                 </div>
                                 <div class="col">
                                     <input type="text" id="input-companyName" class="form-control">
                                     <span id="alert-companyName" class="badge rounded-pill text-bg-danger" style="display: none;">請填寫公司名稱</span>
                                 </div>
-                                <div class="pe-0" style="width: 10ch;">
+                                <div class="pe-0" style="width: 11ch;">
                                     <label for="inputPassword6" class="col-form-label">*聯絡人&nbsp&nbsp&nbsp｜</label>
                                 </div>
                                 <div class="col">
@@ -276,13 +257,13 @@
                             </div>
                             <hr class="m-0">
                             <div class="row g-3 align-items-top p-2">
-                                <div class="pe-0" style="width: 10ch;">
+                                <div class="pe-0" style="width: 11ch;">
                                     <label for="inputPassword6" class="col-form-label">&nbsp聯絡電話｜</label>
                                 </div>
                                 <div class="col">
                                     <input type="text" id="input-phone" class="form-control" aria-describedby="passwordHelpInline">
                                 </div>
-                                <div class="pe-0" style="width: 10ch;">
+                                <div class="pe-0" style="width: 11ch;">
                                     <label for="inputPassword6" class="col-form-label">*聯絡信箱｜</label>
                                 </div>
                                 <div class="col">
@@ -292,7 +273,7 @@
                             </div>
                             <hr class="m-0">
                             <div class="row g-3 align-items-top p-2">
-                                <div class="pe-0" style="width: 10ch;">
+                                <div class="pe-0" style="width: 11ch;">
                                     <label for="inputPassword6" class="col-form-label">*需求</label>
                                 </div>
                                 <div class="col">
@@ -365,7 +346,6 @@
                                 let linkUrl = `mailto:${mailAddress}?subject=${mailSubject}&body=${mailBody}`
                                 location.href = (linkUrl);
                             }
-                            
                         }
                     </script>
                 </div>
@@ -419,7 +399,9 @@
                         <!--地址格式-->
                         <p class="footer-item">
                             <i class="bi bi-geo-alt-fill me-1"></i>
-                            新店區中興路二段190號5樓之2
+                            <a class="text-reset" target="_blank"
+                               href="https://maps.google.com/maps?q=新店區中興路二段190號5樓之28">新店區中興路二段190號5樓之28</a>
+                            
                         </p>
                     </div>
                     <div class="col-12 col-lg-4 pb-5">
@@ -427,7 +409,8 @@
                         <!--地址格式-->
                         <p class="footer-item">
                             <i class="bi bi-geo-alt-fill"></i>
-                            新店區中興路二段190號5樓之2
+                            <a class="text-reset" target="_blank"
+                               href="https://maps.google.com/maps?q=新店區中興路二段190號5樓之2">新店區中興路二段190號5樓之2</a>
                         </p>
                     </div>
                 </div>
