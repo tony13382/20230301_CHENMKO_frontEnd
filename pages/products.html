@@ -107,6 +107,13 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 col-lg-2">
+                    <style>
+                        @media (min-width: 992px) {
+                            #collapseCateList{
+                                display: block !important;
+                            }
+                        }
+                    </style>
                     <div class="d-grid pb-2">
                         <button class="btn btn-secondary d-block d-lg-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCateList" aria-expanded="false" aria-controls="collapseCateList"
                                 style="background-color: #565656;">
@@ -130,7 +137,7 @@
                             }
                         </style>
                         <div class="card card-body p-0 mb-3" style="background: hsla(206, 86%, 39%, 1); color: #ffffff; border-radius: 20px; overflow: hidden;">
-                            <h2 class="text-center fs-3 mt-3 pb-2">Semiconductors</h2>
+                            <h2 class="text-center fs-4 mt-3 pb-2 fw-bolder">Semiconductors</h2>
                             <div class="accordion accordion-flush" id="accordionSemiconductors">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingDiodes">
@@ -202,7 +209,7 @@
                                 -->
                             </div>
                             <hr class="m-0">
-                            <h2 class="text-center fs-3 mt-3 pb-2">IC</h2>
+                            <h2 class="text-center fs-4 mt-3 pb-2 fw-bolder">IC</h2>
                             <div class="accordion accordion-flush" id="accordionIC">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="heading-IC-Items">
@@ -223,7 +230,7 @@
                 <div class="col-12 col-lg-10">
                     <div class="row">
                         <div class="col-12 text-center mt-3" style="color: #0E6EB8;">
-                            <h1>Diodes</h1>
+                            <h1 class="fw-bolder">Diodes</h1>
                         </div>
                         <div class="col-12 justify-content-center">
                             <style>
@@ -235,63 +242,80 @@
                                 }
                             </style>
                             <div class="table-responsive">
-                                <table class="table table-striped" id="table-product" style="font-size: 1rem; border-radius: 20px; overflow: hidden;">
+                                <table class="table table-striped" id="table-product" style="font-size: 1rem; border-radius: 20px; overflow: hidden; height: 1px;">
                                         <tr>
-                                            <td scope="col" style="min-width: 140px; vertical-align:middle;" onclick="sortTable(0)">
-                                                <div class="d-flex align-items-center" style="height: 100%;">
-                                                    <p class="m-0" style="width: 2ch; font-size: 0.5rem;">‒</p> 
-                                                    <p class="m-0 ps-2">TYPE</p>
-                                                </div>
+                                            <td scope="col" style="min-width: 140px;">
+                                                <a href="?sort=type&desc=0" class="text-reset text-decoration-none">
+                                                    <div class="d-flex align-items-center" style="height: 100%;">
+                                                        <span class="m-0" style="width: 2ch; font-size: 0.5rem;">‒</span>
+                                                        <span class="m-0 ps-2">TYPE</span>
+                                                    </div>
+                                                </a>
                                             </td>
                                             <td scope="col" style="vertical-align:middle;">Data Sheet</td>
-                                            <td scope="col" style="min-width: 140px; vertical-align:middle;" onclick="sortTable(2)">
-                                                <div class="d-flex align-items-center" style="height: 100%;">
-                                                    <p class="m-0" style="width: 2ch; font-size: 0.5rem;">‒</p> 
-                                                    <p class="m-0 ps-2">Power Dissipation<br>@ 25°C(max)<br>PD(W)</p>
-                                                </div>
+                                            <td scope="col" style="min-width: 140px;">
+                                                <a href="?sort=pd25&desc=0" class="text-reset text-decoration-none">
+                                                    <div class="d-flex align-items-center" style="height: 100%;">
+                                                        <span class="m-0" style="width: 2ch; font-size: 0.5rem;">‒</span>
+                                                        <span class="m-0 ps-2">Power Dissipation<br>@ 25°C(max)<br>PD(W)</span>
+                                                    </div>
+                                                </a>
                                             </td>
-                                            <td scope="col" style="min-width: 140px; vertical-align:middle;" onclick="sortTable(3)">
-                                                <div class="d-flex align-items-center" style="height: 100%;">
-                                                    <p class="m-0" style="width: 2ch; font-size: 0.5rem;">‒</p> 
-                                                    <p class="m-0 ps-2">Breakdown<br>Voltage(typ)<br>VBR(V)	</p>
-                                                </div>
-                                                
+                                            <td scope="col" style="min-width: 140px;">
+                                                <a href="?sort=bvr&desc=0" class="text-reset text-decoration-none">
+                                                    <div class="d-flex align-items-center" style="height: 100%;">
+                                                        <span class="m-0" style="width: 2ch; font-size: 0.5rem;">‒</span>
+                                                        <span class="m-0 ps-2">Breakdown<br>Voltage(typ)<br>VBR(V)	</span>
+                                                    </div>
+                                                </a>
                                             </td>
-                                            <td scope="col" style="min-width: 140px; vertical-align:middle;" onclick="sortTable(4)">
-                                                <div class="d-flex align-items-center" style="height: 100%;">
-                                                    <p class="m-0" style="width: 2ch; font-size: 0.5rem;">‒</p> 
-                                                    <p class="m-0 ps-2">@ IT(mA)</p>
-                                                </div>
+                                            <td scope="col" style="min-width: 140px;">
+                                                <a href="?sort=itma&desc=0" class="text-reset text-decoration-none">
+                                                    <div class="d-flex align-items-center" style="height: 100%;">
+                                                        <span class="m-0" style="width: 2ch; font-size: 0.5rem;">‒</span>
+                                                        <span class="m-0 ps-2">@ IT(mA)</span>
+                                                    </div>
+                                                </a>
                                             </td>
-                                            <td scope="col" style="min-width: 140px; vertical-align:middle;" onclick="sortTable(5)">
-                                                <div class="d-flex align-items-center" style="height: 100%;">
-                                                    <p class="m-0" style="width: 2ch; font-size: 0.5rem;">‒</p> 
-                                                    <p class="m-0 ps-2">Working Peak Reverse<br>Voltage<br>Vrwm(V)</p>
-                                                </div>
+                                            <td scope="col" style="min-width: 140px;">
+                                                <a href="?sort=wprvv&desc=0" class="text-reset text-decoration-none">
+                                                    <div class="d-flex align-items-center" style="height: 100%;">
+                                                        <span class="m-0" style="width: 2ch; font-size: 0.5rem;">‒</span>
+                                                        <span class="m-0 ps-2">Working Peak Reverse<br>Voltage<br>Vrwm(V)</span>
+                                                    </div>
+                                                </a>
                                             </td>
-                                            <td scope="col" style="min-width: 140px; vertical-align:middle;" onclick="sortTable(6)">
-                                                <div class="d-flex align-items-center" style="height: 100%;">
-                                                    <p class="m-0" style="width: 2ch; font-size: 0.5rem;">‒</p> 
-                                                    <p class="m-0 ps-2">Maximum Reverse Leakage at Vrwm IR(uA)</p>
-                                                </div>
+                                            <td scope="col" style="min-width: 140px;">
+                                                <a href="?sort=mrlavi&desc=0" class="text-reset text-decoration-none">
+                                                    <div class="d-flex align-items-center" style="height: 100%;">
+                                                        <span class="m-0" style="width: 2ch; font-size: 0.5rem;">‒</span>
+                                                        <span class="m-0 ps-2">Maximum Reverse Leakage at Vrwm IR(uA)</span>
+                                                    </div>
+                                                </a>
                                             </td>
-                                            <td scope="col" style="min-width: 140px; vertical-align:middle;" onclick="sortTable(7)">
-                                                <div class="d-flex align-items-center" style="height: 100%;">
-                                                    <p class="m-0" style="width: 2ch; font-size: 0.5rem;">‒</p> 
-                                                    <p class="m-0 ps-2">Maximum Reverse Current IPP(A)</p>
-                                                </div>
+                                            <td scope="col" style="min-width: 140px;">
+                                                <a href="?sort=mrci&desc=0" class="text-reset text-decoration-none">
+                                                    <div class="d-flex align-items-center" style="height: 100%;">
+                                                        <span class="m-0" style="width: 2ch; font-size: 0.5rem;">‒</span>
+                                                        <span class="m-0 ps-2">Maximum Reverse Current IPP(A)</span>
+                                                    </div>
+                                                </a>
                                             </td>
-                                            <td scope="col" style="min-width: 140px; vertical-align:middle;" onclick="sortTable(8)">
-                                                <div class="d-flex align-items-center" style="height: 100%;">
-                                                    <p class="m-0" style="width: 2ch; font-size: 0.5rem;">‒</p> 
-                                                    <p class="m-0 ps-2">Maximum Reverse Voltage at Ipp (clamping) VC(V)</p>
-                                                </div>
+                                            <td scope="col" style="min-width: 140px;">
+                                                <a href="?sort=mrvai&desc=0" class="text-reset text-decoration-none">
+                                                    <div class="d-flex align-items-center" style="height: 100%;">
+                                                        <span class="m-0" style="width: 2ch; font-size: 0.5rem;">‒</span>
+                                                        <span class="m-0 ps-2">Maximum Reverse Voltage at Ipp (clamping) VC(V)</span>
+                                                    </div>
+                                                </a>
                                             </td>
-                                            <td scope="col" style="min-width: 140px; vertical-align:middle;" onclick="sortTable(9)">
-                                                <div class="d-flex align-items-center" style="height: 100%;">
-                                                    <p class="m-0" style="width: 2ch; font-size: 0.5rem;">‒</p> 
-                                                    <p class="m-0 ps-2">Package</p>
-                                                </div>
+                                            <td scope="col" style="min-width: 140px;">
+                                                <a href="?sort=package&desc=0" class="text-reset text-decoration-none">
+                                                    <div class="d-flex align-items-center" style="height: 100%;">
+                                                        <span class="m-0" style="width: 2ch; font-size: 0.5rem;">‒</span>
+                                                        <span class="m-0 ps-2">Package</span>
+                                                    </div>
+                                                </a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -392,39 +416,6 @@
                                         </tr>
                                     </tbody>
                                 </table>
-                                <script>
-                                    let isDescending = true;
-                                    function sortTable(columnIndex) {
-                                        const table = document.getElementById("table-product");
-                                        const rows = table.rows;
-                                        const headerRow = rows[0]
-                                        const cell = headerRow.cells[columnIndex];
-                                    
-                                        // 切換排序順序
-                                        isDescending = !isDescending;
-                                        
-                                        // 切換箭頭方向
-                                        const arrow = isDescending ? "▼" : "▲";
-                                        for(let index = 0; index < headerRow.cells.length; index++){
-                                            headerRow.cells[index].innerHTML = headerRow.cells[index].innerHTML.replace(/▼|▲|‒/, "‒");
-                                        }
-                                        cell.innerHTML = cell.innerHTML.replace(/▼|▲|‒/, arrow);
-                                        
-                                        // 排序
-                                        const sortedRows = Array.from(rows).slice(1).sort((a, b) => {
-                                            const aValue = a.cells[columnIndex].textContent;
-                                            const bValue = b.cells[columnIndex].textContent;
-                                            if (isDescending) {
-                                                return bValue.localeCompare(aValue);
-                                            } else {
-                                                return aValue.localeCompare(bValue);
-                                            }
-                                        });
-                                        
-                                        // 重新排列表格行
-                                        table.innerHTML = headerRow.outerHTML + sortedRows.map(row => row.outerHTML).join("");
-                                    }
-                                </script>
                             </div>
                         </div>
                         <div class="col-12">
